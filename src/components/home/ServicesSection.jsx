@@ -1,32 +1,107 @@
+import React from 'react'
+import '../../assets/css/home/ServicesSection.css'; //
+import img1 from '../../assets/image/img1.png';
+import img2 from '../../assets/image/img2.png';
+import img3 from '../../assets/image/img3.png';
+import img4 from '../../assets/image/img4.png';
+import img5 from '../../assets/image/img5.png';
+import img6 from '../../assets/image/img6.png';
+import img7 from '../../assets/image/img7.png';
+import img8 from '../../assets/image/img8.png';
+
 const ServicesSection = () => {
-  const services = [
-    {
-      title: "Medical Education",
-      desc: "Online and offline training programs for aspiring medical professionals.",
-    },
-    {
-      title: "Healthcare Consulting",
-      desc: "Strategic support for hospitals, clinics, and healthcare startups.",
-    },
-    {
-      title: "Technology Solutions",
-      desc: "Custom tools and platforms for diagnostics, data, and patient care.",
-    },
-  ];
-
   return (
-    <section className="py-16 px-6 text-center bg-gray-50">
-      <h2 className="text-3xl font-bold mb-12 text-blue-800">Our Services</h2>
-      <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
-        {services.map((s, i) => (
-          <div key={i} className="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
-            <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
-            <p className="text-gray-600">{s.desc}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-};
+    <div>
+      <section className="treatment-section">
+    <h1>
+      Say Goodbye to <b className="highlight">Surgery</b>
+    </h1>
+    <p className="subtitle">Explore Safer, Scar-Free Treatments</p>
 
-export default ServicesSection;
+    <div className="treatment-grid">
+      
+      <div className="treatment-card active">
+        <h3>Geniculate Artery Embolization</h3>
+        <p>A non-surgical solution to relieve chronic knee pain safely.</p>
+        <div className="card-footer">
+          <button className="arrow-btn active">→</button>
+          <img src={img1} alt="Knee"/>
+        </div>
+      </div>
+
+      <div className="treatment-card">
+        <h3>Prostate Artery Embolization</h3>
+        <p>Minimally invasive relief for varicocele without surgery.</p>
+        <div className="card-footer">
+          <button className="arrow-btn">→</button>
+          <img src={img2} alt="Prostate"/>
+        </div>
+      </div>
+
+      <div className="treatment-card">
+        <h3>Fallopian Tube Recanalization</h3>
+        <p>Non-surgical treatment to unblock fallopian tubes.</p>
+        <div className="card-footer">
+          <button className="arrow-btn">→</button>
+          <img src={img3} alt="Fallopian"/>
+        </div>
+      </div>
+
+      <div className="treatment-card">
+        <h3>Varicocele Embolization</h3>
+        <p>Minimally invasive relief for varicocele without surgery.</p>
+        <div className="card-footer">
+          <button className="arrow-btn">→</button>
+          <img src={img4} alt="Varicocele"/>
+        </div>
+      </div>
+
+      <div className="treatment-card">
+        <h3>Thyroid Nodule Ablation</h3>
+        <p>Minimally invasive treatment for thyroid nodules.</p>
+        <div className="card-footer">
+          <button className="arrow-btn">→</button>
+          <img src={img5} alt="Thyroid"/>
+        </div>
+      </div>
+
+      <div className="treatment-card">
+        <h3>Uterine Fibroid Embolization</h3>
+        <p>A non-surgical procedure to shrink fibroids and relieve symptoms.</p>
+        <div className="card-footer">
+          <button className="arrow-btn">→</button>
+          <img src={img6}alt="Fibroid"/>
+        </div>
+      </div>
+
+      <div className="treatment-card">
+        <h3>Varicose Veins</h3>
+        <p>Non-surgical treatment for varicose veins.</p>
+        <div className="card-footer">
+          <button className="arrow-btn">→</button>
+          <img src={img7}alt="Veins"/>
+        </div>
+      </div>
+
+      <div className="treatment-card">
+        <h3>Transcatheter Aortic Valve Replacement</h3>
+        <p>Non-surgical aortic valve replacement for better heart function.</p>
+        <div className="card-footer">
+          <button className="arrow-btn">→</button>
+          <img src={img8} alt="Valve"/>
+        </div>
+      </div>
+    </div>
+
+   
+    <div className="pagination">
+      <span className="dot active"></span>
+      <span className="dot"></span>
+    </div>
+  </section>
+      
+    </div>
+  )
+}
+
+export default ServicesSection

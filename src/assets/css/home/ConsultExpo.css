@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
+.consult-section {
+  padding: 50px 20px;
+}
+
+.consult-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.left-panel {
+  flex: 1;
+  min-width: 300px;
+}
+
+.left-panel h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2e2352;
+
+}
+.left-panel h2 b {
+  color: #ff2e75;
+
+}
+
+.left-panel h2 span {
+  color: #ff2e75;
+}
+
+.subtext {
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.icon img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px; 
+}
+
+.step p {
+  margin: 0;
+  color: #2e2352;
+  font-weight: bold;
+  max-width: 300px;
+}
+
+.divider {
+  border-left: 1px dashed #ccc;
+  height: 100%;
+}
+
+.right-panel {
+  flex: 1;
+  min-width: 300px;
+}
+
+.consult-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: none;
+  background: #f7f7f7;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+form button {
+  background-color: #ff2e75;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.consult-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .consult-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+  }
+
+  .left-panel h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .subtext {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .step p {
+    max-width: 100%;
+  }
+
+  .divider {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .consult-section {
+    padding: 40px 15px;
+  }
+
+  .left-panel h2 {
+    font-size: 24px;
+  }
+
+  .subtext {
+    font-size: 14px;
+  }
+
+  .step {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .icon img {
+    width: 35px;
+    height: 35px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .left-panel h2 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .subtext {
+    font-size: 13px;
+  }
+
+  .step {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .step p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  form button {
+    width: 100%;
+  }
+}

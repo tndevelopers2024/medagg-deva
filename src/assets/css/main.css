@@ -30,6 +30,9 @@
   color: white;
   font-size: large;
 }
+.hero{
+  overflow-x: hidden;
+}
 
 .hero-container {
   display: flex;
@@ -54,19 +57,19 @@
 }
 
 .logo-box img {
-  width: 60px;
-  height: 60px;
+  width: 15%;
+  height: 15%;
   margin-right: 15px;
 }
 
 .logo-text h2 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   color: white;
 }
 
 .logo-text span {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: bold;
   color: #00c0ff;
 }
@@ -295,8 +298,213 @@ span {
   left: 86px;
 }
 
-@media (max-width:1481px) {
-     .social-media{
-      
-     }
+@media(max-width:1140px){
+    .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-left {
+    padding-right: 0;
+    min-width: 100%;
+  }
+
+  .main-heading {
+    font-size: 30px;
+  }
+
+  .sub-heading {
+    font-size: 16px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .search-container input,
+  .search-container button {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .search-container button {
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+
+  .hero-right {
+    align-items: center;
+  }
+
+  .icons {
+    margin-right: 0;
+  }
+
+  .stats-boxes {
+    position: static;
+    align-items: center;
+  }
+
+  #sb1,
+  #sb2,
+  #sb3 {
+    margin-right: 0;
+  }
+
+  .doctor-image img {
+    max-width: 250px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .Doctorimg {
+    width: 250px;
+    height: auto;
+    left: 0;
+  }
+   .logo-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-box img {
+    margin-right: 0;
+  }
+  .icon-circle {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }  
 }
+
+@media (min-width: 1300px) {
+  .hero-container {
+    padding: 0 80px;
+  }
+
+  .main-heading {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-left {
+    padding-right: 0;
+    min-width: 100%;
+  }
+
+  .main-heading {
+    font-size: 30px;
+  }
+
+  .sub-heading {
+    font-size: 16px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .search-container input,
+  .search-container button {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .search-container button {
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+
+  .hero-right {
+    align-items: center;
+  }
+
+  .icons {
+    margin-right: 0;
+  }
+
+  .stats-boxes {
+    position: static;
+    align-items: center;
+  }
+
+  #sb1,
+  #sb2,
+  #sb3 {
+    margin-right: 0;
+  }
+
+  .doctor-image img {
+    max-width: 250px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .Doctorimg {
+    width: 250px;
+    height: auto;
+    left: 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .logo-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-box img {
+    margin-right: 0;
+  }
+
+  .main-heading {
+    font-size: 24px;
+  }
+
+  .sub-heading {
+    font-size: 14px;
+  }
+
+  .stat-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .stat-pill {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .tags span {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+
+  .icon-circle {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}
+
+
+
+
+

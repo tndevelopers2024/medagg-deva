@@ -1,0 +1,165 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #2e225d;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.call-icon {
+  border-radius: 50%;
+  border: 2px solid #e73884;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.call-icon:hover {
+  background-color: #e73884;
+  color: white;
+}
+
+button.outlined-btn{
+  border-radius: 10px;
+}
+
+.outlined-btn,
+.filled-btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #e73884;
+  background: transparent;
+  color: white;
+}
+
+.filled-btn {
+  /* background-color: #e73884; */
+  border: 2px solid #e73884;
+}
+button.outlined-btn{
+  background-color: transparent;
+  color: #fff;
+}
+button.filled-btn:hover{
+
+  background-color: #e73884;
+  color: white;
+}
+
+.navbar-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  .header-left {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #2e225d;
+    width: 100%;
+    position: absolute;
+    top: 70px; /* below the header */
+    left: 0;
+    padding: 20px;
+    gap: 20px;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .navbar-btn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .header-right {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .outlined-btn,
+  .filled-btn {
+    width: 100%;
+    text-align: left;
+  }
+
+  .call-icon {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 30px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .outlined-btn,
+  .filled-btn {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .call-icon {
+    padding: 6px;
+    font-size: 14px;
+  }
+}

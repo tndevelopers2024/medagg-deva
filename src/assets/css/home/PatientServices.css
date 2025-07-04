@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
+.journey-section {
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.journey-header h2 {
+  font-size: 36px;
+  color: #e73884;
+  margin-bottom: 10px;
+  font-weight:700 ;
+  text-align: left;
+  margin-left: 70px;
+}
+
+.journey-header h2 b {
+  color:#1c164d;
+  font-weight: 700;
+}
+
+.journey-header p {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #777;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 70px;
+}
+
+/* Journey Steps */
+.journey-steps {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.journey-steps::before {
+  content: '';
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background: url('wave.svg') center no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Circle & Label */
+.journey-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+    margin: 30px;
+}
+
+.label {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.label.dark {
+  border: 2px solid #2f2250;
+    background-color: #fff;
+    color: #2f2250;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+.label.dark:hover {
+  background-color: #2f2250;
+  color: #fff;
+}
+.label.pink {
+  border: 2px solid #e73884;
+    background-color: #fff;
+    color: #e73884;
+    transition: background-color 0.3s, color 0.3s;
+}
+.label.pink{
+  margin-top: 20px;
+}
+.label.pink:hover {
+  background-color: #e73884;
+  color: #fff;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 12px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+
+
+.circle.dark {
+  border-color: #2f2250;
+}
+
+.circle.pink {
+  border-color: #e73884;
+}
+
+.circle img {
+  width: 48px;
+  height: 48px;
+}
+
+@media (max-width: 768px) {
+  .journey-steps {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .journey-steps::before {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .journey-section {
+    padding: 80px 100px;
+  }
+
+  .journey-steps {
+    gap: 100px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .journey-section {
+    padding: 40px 15px;
+  }
+
+  .journey-header h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .journey-header p {
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0;
+    max-width: 90%;
+  }
+
+  .journey-steps {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .journey-steps::before {
+    display: none;
+  }
+
+  .journey-step {
+    margin: 20px 0;
+  }
+
+  .label {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-width: 8px;
+  }
+
+  .circle img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .journey-header h2 {
+    font-size: 22px;
+  }
+
+  .journey-header p {
+    font-size: 14px;
+  }
+
+  .label {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+    border-width: 6px;
+  }
+
+  .circle img {
+    width: 32px;
+    height: 32px;
+  }
+}
