@@ -6,7 +6,7 @@ body {
 .appointment-section {
   /* background: linear-gradient(rgba(30, 20, 60, 0.9), rgba(30, 20, 60, 0.9)),
               url('images/medical-bg.jpg') center/cover no-repeat; */
-  background-image: linear-gradient(to bottom, rgba(50, 37, 84, 0.79)), url(../../image/OurSerimg.png);
+  background-image: linear-gradient(to bottom, rgba(50, 37, 84, 0.79)), url(/image/OurSerimg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

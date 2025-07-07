@@ -1,6 +1,5 @@
 import '../../assets/css/home/BotServices.css';
-import Bot from '../../assets/image/Bot.png'; 
-import  Searchicon from '../../assets/icons/search.png'; 
+
 
 const BotServices = () => {
     return(
@@ -8,7 +7,7 @@ const BotServices = () => {
         <section className="assistant-section">
   <div className="assistant-container">
     <div className="assistant-image">
-      <img src={Bot} alt="Health Assistant Robot"/>
+      <img src={'/image/Bot.png'} alt="Health Assistant Robot"/>
     </div>
 
     <div className="assistant-content">
@@ -17,7 +16,7 @@ const BotServices = () => {
 
       <div className="assistant-search">
         <div className="Searchicon">
-          <img src={Searchicon} alt="" />
+          <img src={'/icons/search.png'} alt="" />
         </div>
         <input type="text" placeholder="Ask Your Concern here."/>
         <button className="search-btn">→</button>

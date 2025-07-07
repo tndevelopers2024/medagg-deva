@@ -1,10 +1,5 @@
-import '../../assets/css/home/WhyMedagg.css';
-import  Wimg1 from '../../assets/image/Wimg1.png';
-import  Wimg2 from '../../assets/image/Wimg2.png';
-import  Wimg3 from '../../assets/image/Wimg3.png';
-import  Wimg4 from '../../assets/image/Wimg4.png';
-import  Wimg5 from '../../assets/image/Wimg5.png';
-import  Wimg6 from '../../assets/image/Wimg6.png';
+import '../..//assets/css/home/WhyMedagg.css';
+
 
 
 const WhyMedagg = () => {
@@ -20,7 +15,7 @@ const WhyMedagg = () => {
 
     <div className="features-grid">
       <div className="feature-card">
-         <div className="doted-border"><img src={Wimg1} alt="Surgeries" /></div>
+         <div className="doted-border"><img src={'/image/Wimg1.png'} alt="Surgeries" /></div>
         
         <h3>SURGERIES SIMPLIFIED</h3>
         <p>
@@ -28,7 +23,7 @@ const WhyMedagg = () => {
         </p>
       </div>
       <div className="feature-card ">
-        <div className="doted-border"><img src={Wimg2}  alt="Care Custodian" /></div>
+        <div className="doted-border"><img src={'/image/Wimg2.png'}  alt="Care Custodian" /></div>
         <h3>CARE CUSTODIAN</h3>
         <p>
           Medagg Healthcare’s Care Custodian will be your one point contact, who will guide and help you choose the right treatment, with the right hospital!
@@ -36,7 +31,7 @@ const WhyMedagg = () => {
       </div>
 
       <div className="feature-card">
-         <div className="doted-border"><img src={Wimg3}  alt="Insurance" /></div>
+         <div className="doted-border"><img src={'/image/Wimg3.png'}  alt="Insurance" /></div>
         
         <h3>ALL INSURANCE ACCEPTED</h3>
         <p>
@@ -45,7 +40,7 @@ const WhyMedagg = () => {
       </div>
 
       <div className="feature-card">
-         <div className="doted-border"> <img src={Wimg4} alt="Second Opinion" /></div>
+         <div className="doted-border"> <img src={'/image/Wimg4.png'} alt="Second Opinion" /></div>
        
         <h3>SECOND OPINION</h3>
         <p>
@@ -53,7 +48,7 @@ const WhyMedagg = () => {
         </p>
       </div>
       <div className="feature-card">
-         <div className="doted-border"><img src={Wimg5}  alt="Post Care" /></div>
+         <div className="doted-border"><img src={'/image/Wimg5.png'}  alt="Post Care" /></div>
         
         <h3>POST SURGERY CARE</h3>
         <p>
@@ -61,7 +56,7 @@ const WhyMedagg = () => {
         </p>
       </div>
       <div className="feature-card">
-         <div className="doted-border"><img src={Wimg6}  alt="No-cost EMI" /></div>
+         <div className="doted-border"><img src={'/image/Wimg6.png'}  alt="No-cost EMI" /></div>
         <h3>NO-COST EMI</h3>
         <p>
           Medagg healthcare helps you choose different options for surgery. We help you choose the best hospital. We also provide alternative treatment for surgeries

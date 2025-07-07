@@ -1,9 +1,4 @@
 import '../../assets/css/home/ConsultExpo.css';
-import Conimg1 from '../../assets/image/Conimg1.png';
-import Conimg2 from '../../assets/image/Conimg2.png';
-import Conimg3 from '../../assets/image/Conimg3.png';
-import Conimg4 from '../../assets/image/Conimg4.png';
-import ArrowConExpo from '../../assets/image/ArrowConExpo.png'
 
 const ConsultExpo = () => {
     return(
@@ -16,24 +11,24 @@ const ConsultExpo = () => {
         <p className="subtext">Get Expert Guidance And Clarity On The Best Non-Surgical Treatments Tailored To You.</p>
 
         <div className="step">
-          <div className="icon"><img src={Conimg1} alt="" /></div>
+          <div className="icon"><img src={'/image/Conimg1.png'} alt="" /></div>
           <p>Our Care Custodian Will Call You Once You Share Your Details</p>
         </div>
-        <div className="arrowimg"><img className='arrow' src={ArrowConExpo} alt="" /></div>
+        <div className="arrowimg"><img className='arrow' src={'/image/ArrowConExpo.png'} alt="" /></div>
         <div className="step">
-          <div className="icon"><img src={Conimg2} alt="" /></div>
+          <div className="icon"><img src={'/image/Conimg2.png'} alt="" /></div>
           <p>The Care Custodian Will Understand Your Problem In Detail</p>
         </div>
-        <div className="arrowimg"><img className='arrow' src={ArrowConExpo} alt="" /></div>
+        <div className="arrowimg"><img className='arrow' src={'/image/ArrowConExpo.png'} alt="" /></div>
 
         <div className="step">
-          <div className="icon"><img src={Conimg3} alt="" /></div>
+          <div className="icon"><img src={'/image/Conimg3.png'} alt="" /></div>
           <p>The Right Solution To Your Query Will Be Addressed With Suitable Options</p>
         </div>
-        <div className="arrowimg"><img className='arrow' src={ArrowConExpo} alt="" /></div>
+        <div className="arrowimg"><img className='arrow' src={'/image/ArrowConExpo.png'} alt="" /></div>
 
         <div className="step">
-          <div className="icon"><img src={Conimg4} alt="" /></div>
+          <div className="icon"><img src={'/image/Conimg4.png'} alt="" /></div>
           <p>Consultation Will Be Fixed On Your Behalf</p>
         </div>
         

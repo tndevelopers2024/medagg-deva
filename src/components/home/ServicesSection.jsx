@@ -1,13 +1,6 @@
 import React from 'react'
 import '../../assets/css/home/ServicesSection.css'; //
-import img1 from '../../assets/image/img1.png';
-import img2 from '../../assets/image/img2.png';
-import img3 from '../../assets/image/img3.png';
-import img4 from '../../assets/image/img4.png';
-import img5 from '../../assets/image/img5.png';
-import img6 from '../../assets/image/img6.png';
-import img7 from '../../assets/image/img7.png';
-import img8 from '../../assets/image/img8.png';
+
 
 const ServicesSection = () => {
   return (
@@ -25,7 +18,7 @@ const ServicesSection = () => {
         <p>A non-surgical solution to relieve chronic knee pain safely.</p>
         <div className="card-footer">
           <button className="arrow-btn active">→</button>
-          <img src={img1} alt="Knee"/>
+          <img src={'/image/img1.png'} alt="Knee"/>
         </div>
       </div>
 
@@ -34,7 +27,7 @@ const ServicesSection = () => {
         <p>Minimally invasive relief for varicocele without surgery.</p>
         <div className="card-footer">
           <button className="arrow-btn">→</button>
-          <img src={img2} alt="Prostate"/>
+          <img src={'/image/img2.png'} alt="Prostate"/>
         </div>
       </div>
 
@@ -43,7 +36,7 @@ const ServicesSection = () => {
         <p>Non-surgical treatment to unblock fallopian tubes.</p>
         <div className="card-footer">
           <button className="arrow-btn">→</button>
-          <img src={img3} alt="Fallopian"/>
+          <img src={'/image/img3.png'} alt="Fallopian"/>
         </div>
       </div>
 
@@ -52,7 +45,7 @@ const ServicesSection = () => {
         <p>Minimally invasive relief for varicocele without surgery.</p>
         <div className="card-footer">
           <button className="arrow-btn">→</button>
-          <img src={img4} alt="Varicocele"/>
+          <img src={'/image/img4.png'} alt="Varicocele"/>
         </div>
       </div>
 
@@ -61,7 +54,7 @@ const ServicesSection = () => {
         <p>Minimally invasive treatment for thyroid nodules.</p>
         <div className="card-footer">
           <button className="arrow-btn">→</button>
-          <img src={img5} alt="Thyroid"/>
+          <img src={'/image/img5.png'} alt="Thyroid"/>
         </div>
       </div>
 
@@ -70,7 +63,7 @@ const ServicesSection = () => {
         <p>A non-surgical procedure to shrink fibroids and relieve symptoms.</p>
         <div className="card-footer">
           <button className="arrow-btn">→</button>
-          <img src={img6}alt="Fibroid"/>
+          <img src={'/image/img6.png'}alt="Fibroid"/>
         </div>
       </div>
 
@@ -79,7 +72,7 @@ const ServicesSection = () => {
         <p>Non-surgical treatment for varicose veins.</p>
         <div className="card-footer">
           <button className="arrow-btn">→</button>
-          <img src={img7}alt="Veins"/>
+          <img src={'/image/img7.png'}alt="Veins"/>
         </div>
       </div>
 
@@ -88,7 +81,7 @@ const ServicesSection = () => {
         <p>Non-surgical aortic valve replacement for better heart function.</p>
         <div className="card-footer">
           <button className="arrow-btn">→</button>
-          <img src={img8} alt="Valve"/>
+          <img src={'/image/img8.png'} alt="Valve"/>
         </div>
       </div>
     </div>

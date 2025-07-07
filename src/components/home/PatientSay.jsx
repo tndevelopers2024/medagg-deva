@@ -1,8 +1,4 @@
 import '../../assets/css/home/PatientSay.css';
-import Perimg1 from '../../assets/image/Perimg1.png';
-import Perimg2 from '../../assets/image/Perimg2.png';
-import Perimg3 from '../../assets/image/Perimg3.png';
-import Perimg4 from '../../assets/image/Perimg4.png';
 
 const PatientSay = () => {
     return(
@@ -17,7 +13,7 @@ const PatientSay = () => {
         <div className="testimonial-card">
           <p className="quote">“Real professionals in offering advice about specialised doctors and hospitals. Appreciate their commitment to follow up even after advice.”</p>
           <div className="patient-info">
-            <img src={Perimg1} alt="Priya"/>
+            <img src={'/image/Perimg1.png'} alt="Priya"/>
             <div>
               <h4>Priya Ramasamy</h4>
               <span>Salem</span>
@@ -29,7 +25,7 @@ const PatientSay = () => {
         <div className="testimonial-card">
           <p className="quote">“Real professionals in offering advice about specialised doctors and hospitals. Appreciate their commitment to follow up even after advice.”</p>
           <div className="patient-info">
-            <img src={Perimg2} alt="Kalim"/>
+            <img src={'/image/Perimg2.png'} alt="Kalim"/>
             <div>
               <h4>Kalim Ahmed</h4>
               <span>Chennai</span>
@@ -41,7 +37,7 @@ const PatientSay = () => {
         <div className="testimonial-card">
           <p className="quote">“Real professionals in offering advice about specialised doctors and hospitals. Appreciate their commitment to follow up even after advice.”</p>
           <div className="patient-info">
-            <img src={Perimg3} alt="Sri Ram"/>
+            <img src={'/image/Perimg3.png'} alt="Sri Ram"/>
             <div>
               <h4>Sri Ram</h4>
               <span>Thanjavur</span>
@@ -52,7 +48,7 @@ const PatientSay = () => {
         <div className="testimonial-card">
           <p className="quote">“Real professionals in offering advice about specialised doctors and hospitals. Appreciate their commitment to follow up even after advice.”</p>
           <div className="patient-info">
-            <img src={Perimg4} alt="Ramasamy"/>
+            <img src={'/image/Perimg4.png'} alt="Ramasamy"/>
             <div>
               <h4>Ramasamy</h4>
               <span>Chennai</span>

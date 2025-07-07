@@ -1,10 +1,4 @@
 import '../../assets/css/home/PatientServices.css'
-import Pimg1 from '../../assets/image/Pimg1.png';
-import Pimg2 from '../../assets/image/Pimg2.png';
-import Pimg3 from '../../assets/image/Pimg3.png';
-import Pimg4 from '../../assets/image/Pimg4.png';
-import Ellipse1 from '../../assets/image/Ellipse1.png';
-import Ellipse2 from '../../assets/image/Ellipse2.png';
 
 
 const PatientServices = () => {
@@ -23,14 +17,14 @@ const PatientServices = () => {
     <div className="journey-step">
       <div className="label dark">Consultation & Planning</div>
       <div className="circle dark">
-        <img src={Pimg1} alt="Consultation"/>
+        <img src={'/image/Pimg1.png'} alt="Consultation"/>
       </div>
-      <img className='Ellipse1' src={Ellipse2} alt="Consultation"/>
+      <img className='Ellipse1' src={'/image/Ellipse2.png'} alt="Consultation"/>
     </div>
     <div style={{justifyItems:"left"}} className="journey-step">
-       <img className='Ellipse2' src={Ellipse1} alt="Consultation"/>
+       <img className='Ellipse2' src={'/image/Ellipse1.png'} alt="Consultation"/>
       <div style={{ marginLeft:82}} className="circle pink">
-        <img src={Pimg2} alt="Booking"/>
+        <img src={'/image/Pimg2.png'} alt="Booking"/>
       </div>
       <div style={{ marginLeft:58}} className="label pink">Booking & Coverage</div>
     </div>
@@ -38,14 +32,14 @@ const PatientServices = () => {
     <div style={{justifyItems:"left"}} className="journey-step">
       <div  className="label dark">Treatment & Care</div>
       <div style={{ marginLeft:46}} className="circle dark">
-        <img src={Pimg3} alt="Care"/>
+        <img src={'/image/Pimg3.png'} alt="Care"/>
       </div>
-       <img className='Ellipse3' src={Ellipse2} alt="Consultation"/>
+       <img className='Ellipse3' src={'/image/Ellipse2.png'} alt="Consultation"/>
     </div>
     <div style={{justifyItems:"left"}} className="journey-step">
-       <img className='Ellipse4' src={Ellipse1} alt="Consultation"/>
+       <img className='Ellipse4' src={'/image/Ellipse1.png'} alt="Consultation"/>
       <div style={{ marginLeft:16}} className="circle pink">
-        <img src={Pimg4} alt="Recovery"/>
+        <img src={'/image/Pimg4.png'} alt="Recovery"/>
       </div>
       <div className="label pink">Recovery & Results</div>
     </div>

@@ -14,7 +14,7 @@ const OurServices = () => {
      
       <div className="service-card">
         <div className="service-icon">
-          <img src={'../../assets/image/oc1.png'} alt="Surgical Icon"/>
+          <img src={'/image/Oc1.png'} alt="Surgical Icon"/>
         </div>
         <h3>SURGICAL</h3>
         <p>We Connect you with top hospitals and expert doctors for exceptional care.</p>
@@ -23,7 +23,7 @@ const OurServices = () => {
      
       <div className="service-card">
         <div className="service-icon">
-          <img src={'../../assets/image/oc2.png'} alt="Non-Surgical Icon"/>
+          <img src={'/image/Oc2.png'} alt="Non-Surgical Icon"/>
         </div>
         <h3>NON - SURGICAL</h3>
         <p>Medagg’s Care Custodians offer expert guidance on alternative treatments to surgery.</p>
@@ -32,7 +32,7 @@ const OurServices = () => {
    
       <div className="service-card">
         <div className="service-icon">
-          <img src={'../../assets/image/oc3.png'} alt="Second Opinion Icon"/>
+          <img src={'/image/Oc3.png'} alt="Second Opinion Icon"/>
         </div>
         <h3>SECOND OPINION</h3>
         <p>Get expert second opinions from top doctors for the best care decisions.</p>

@@ -3,10 +3,6 @@ import { SlSocialFacebook } from "react-icons/sl";
 import { PiInstagramLogoThin,PiYoutubeLogoThin  } from "react-icons/pi";
 import { LuLinkedin } from "react-icons/lu";
 import { RiTwitterXFill } from "react-icons/ri";
-import  Searchbar from '../../assets/icons/search.png'; 
-
-
-
 
 
 
@@ -35,7 +31,7 @@ const Hero = () => {
           </p>
 
           <div className="search-container">
-            <div className="Search-bar"><img src={Searchbar} alt="" /></div>
+            <div className="Search-bar"><img src={'/icons/search.png'} alt="" /></div>
             <input type="text"  placeholder= {'Facing symptoms? Type them in'} />
             <button>Search</button>
           </div>
@@ -81,7 +77,7 @@ const Hero = () => {
 
 
           <div className="doctor-image">
-              <img className="Doctorimg" src="/images/hero.png" alt="Doctor" />
+              <img className="Doctorimg" src={'/image/hero.png'} alt="Doctor" />
           </div>
         </div>
 

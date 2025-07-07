@@ -1,9 +1,4 @@
 import '../../assets/css/home/OurDoctor.css';
-import Doimg1 from '../../assets/image/Doimg1.png';
-import Doimg2 from '../../assets/image/Doimg2.png';
-import Doimg3 from '../../assets/image/Doimg3.png';
-import Doimg4 from '../../assets/image/Doimg4.png';
-
 
 const OurDoctor = () => {
     return (
@@ -46,24 +41,24 @@ const OurDoctor = () => {
                             name: "Dr. Sankesh Mehta",
                             details: "MBBS., MD., FENVIR",
                             specialty: "(Interventional Radiologist)",
-                            img: Doimg1,                      },
+                            img: '/image/Doimg1.png',                      },
                         {
                             name: "Dr. S Kiran Kumar",
                             details: "MBBS., DNB (RD), FVIR, EBIR",
                             specialty: "(Interventional Radiologist)",
-                            img: Doimg2
+                            img: '/image/Doimg2.png'
                         },
                         {
                             name: "Dr. Arul Arokia Sensan Babu",
                             details: "MBBS., MD., FENVIR",
                             specialty: "(Interventional Radiologist)",
-                            img: Doimg3
+                            img: '/image/Doimg3.png'
                         },
                         {
                             name: "Dr. Periyakaruppan",
                             details: "MBBS., MD., FENVIR",
                             specialty: "(Interventional Radiologist)",
-                            img: Doimg4
+                            img: '/image/Doimg4.png'
                         },
                     ].map((doctor, index) => (
                         <div key={index} className="doctor-card">

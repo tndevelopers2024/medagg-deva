@@ -1,5 +1,4 @@
 import '../../assets/css/home/AppBooking.css';
-import AppBook from '../../assets/image/AppBook.png';
 
     const AppBooking = () => {
         return(
@@ -15,7 +14,7 @@ import AppBook from '../../assets/image/AppBook.png';
       </form>
     </div>
     <div className="appointment-right">
-      <img src={AppBook} alt="Doctor with patient" />
+      <img src={'/image/AppBook.png'} alt="Doctor with patient" />
     </div>
   </div>
 </section>
