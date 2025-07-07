@@ -16,12 +16,16 @@ const OurDoctor = () => {
                     Our expert doctors provide personalized, non-surgical care with a patient-first approach,
                     guiding you to safe and effective treatments.
                 </p>
-
-                <div className="search-box">
+                <div className='input-border'>
+                     <div className="search-box">
+                        {/* <label htmlFor="">Name</label> */}
                     <input type="text" placeholder="Type a Name" />
+                    {/* <label htmlFor="">Locations</label> */}
                     <select>
+                        
                         <option>Select Location</option>
                     </select>
+                    {/* <label htmlFor="">Symptoms</label> */}
                     <input type="text" placeholder="Type symptoms" />
                     <button className="search-btn">→ Search</button>
                 </div>
@@ -33,35 +37,37 @@ const OurDoctor = () => {
                     <button>Thyroid</button>
                     <button>Prostate</button>
                 </div>
+                </div>
+
 
                 <div className="doctors-grid">
                     {[
                         {
                             name: "Dr. Sankesh Mehta",
                             details: "MBBS., MD., FENVIR",
-                            specialty: "Interventional Radiologist",
+                            specialty: "(Interventional Radiologist)",
                             img: Doimg1,                      },
                         {
                             name: "Dr. S Kiran Kumar",
                             details: "MBBS., DNB (RD), FVIR, EBIR",
-                            specialty: "Interventional Radiologist",
+                            specialty: "(Interventional Radiologist)",
                             img: Doimg2
                         },
                         {
                             name: "Dr. Arul Arokia Sensan Babu",
                             details: "MBBS., MD., FENVIR",
-                            specialty: "Interventional Radiologist",
+                            specialty: "(Interventional Radiologist)",
                             img: Doimg3
                         },
                         {
                             name: "Dr. Periyakaruppan",
                             details: "MBBS., MD., FENVIR",
-                            specialty: "Interventional Radiologist",
+                            specialty: "(Interventional Radiologist)",
                             img: Doimg4
                         },
                     ].map((doctor, index) => (
                         <div key={index} className="doctor-card">
-                            <img src={doctor.img} alt="Doctor" />
+                            <img src={doctor.img} alt="Doctor" className={index === 2 ? "large-image" :"Doctorimg3"} />
                             <button className="appointment-btn">→ Book Appointment</button>
                             <h3>{doctor.name}</h3>
                             <p>

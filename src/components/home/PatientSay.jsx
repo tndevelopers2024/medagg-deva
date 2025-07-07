@@ -9,7 +9,7 @@ const PatientSay = () => {
         <div>
              <section className="testimonials-section">
     <div className="testimonials-content">
-      <h2>What Our Patients <b>Says</b></h2>
+      <h2> <b>What Our Patients Says</b></h2>
       <p className="subtitle">Real stories from real patients — see how Medagg’s care made a real difference.</p>
 
       <div className="testimonial-grid">

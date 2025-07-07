@@ -38,7 +38,8 @@ const ConditionMenu = () => {
             className="condition-item"
             onClick={() => handleToggle(index)}
           >
-            {item.name} <span className="arrow">▼</span>
+            {item.name} <span className={`arrow ${activeIndex === index ? 'rotate' : ''}`}>▼</span>
+
           </div>
           {activeIndex === index && (
             <div className="dropdown">

@@ -21,32 +21,50 @@ body {
 
 .assistant-image img {
   max-width: 600px;
-  width: 100%;
-    height: auto;
-    padding: 0px 10px 0px 0px;
+  width: 500px;
+  height: auto;
+  padding: 0px 10px 0px 0px;
+  margin-left: -80px;
+
 }
 
 .assistant-content {
   max-width: 600px;
   padding-left: 100px;
 }
+.assistant-content .highlight b{
+  color: #1c164d;
+  font-weight: 700;
+  font-size: 43px;
+}
 
 .assistant-content h2 {
   font-size: 32px;
   color: #1c164d;
   margin-bottom: 15px;
-  line-height: 1.4;
+  line-height: 1.4; 
+  /* margin-top: 20px; */
+}
+
+strong{
+      font-weight: 700;
+    font-size: 43px;
+    font-size:3.5rem;
 }
 
 .assistant-content .highlight {
   color: #e73884;
   font-weight: 700;
+  font-size:3.5rem;
 }
 
 .assistant-content p {
   color: #8c8c8c;
-  font-size: 16px;
+  font-size: 22px;
   margin-bottom: 30px;
+}
+.assistant-content .highlight b{
+  font-size:3.5rem;
 }
 
 .assistant-search {
@@ -56,7 +74,7 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   max-width: 500px;
-  margin-bottom: 25px;
+  margin-bottom: 60px;
 }
 
 .assistant-search input {
@@ -75,11 +93,24 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
+button.outlined-btn{
+  border-radius: 40px;
+  background-color:white;
+}
+
+.assistant-search .Searchicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 15px ;
+  
+}
 
 .assistant-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+
 }
 .assistant-buttons button {
   color: #1c164d;
@@ -91,7 +122,6 @@ body {
   color: #1c164d;
   padding: 10px 18px;
   font-size: 14px;
-  border-radius: 999px;
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
 }
@@ -100,90 +130,149 @@ body {
   background-color: #e73884;
   color: #fff;
 }
-
-@media (min-width: 1200px) {
-  .assistant-container {
-    padding: 0 40px;
-  }
+.assistant-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
-
-@media (max-width: 768px) {
+.assistant-image img {
+  width: 500px;
+}
+.assistant-content {
+  padding-left: 100px;
+}
+@media (max-width: 1199px) {
   .assistant-container {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
     padding: 0 20px;
   }
 
   .assistant-content {
-    max-width: 100%;
-    padding-left: 0;
+    padding-left: 40px;
   }
 
-  .assistant-content h2 {
-    font-size: 26px;
+  .assistant-content h2,
+  .assistant-content .highlight,
+  .assistant-content .highlight b,
+  strong {
+    font-size: 32px;
   }
 
   .assistant-content p {
-    font-size: 15px;
+    font-size: 18px;
+  }
+
+  .search-btn {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+
+  .assistant-image img {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .assistant-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .assistant-content {
+    padding-left: 0;
+  }
+
+  .assistant-content h2,
+  .assistant-content .highlight,
+  .assistant-content .highlight b,
+  strong {
+    font-size: 28px;
+  }
+
+  .assistant-content p {
+    font-size: 16px;
   }
 
   .assistant-search {
     flex-direction: column;
     max-width: 100%;
+    margin-bottom: 40px;
   }
 
   .assistant-search input {
-    border-radius: 10px 10px 0 0;
-    padding: 14px;
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 15px;
   }
 
   .search-btn {
     width: 100%;
-    padding: 12px;
-    border-radius: 0 0 10px 10px;
+    padding: 10px 0;
+    font-size: 16px;
   }
 
   .assistant-buttons {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .outlined-btn {
     width: 100%;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .assistant-section {
-    padding: 40px 15px;
-
+    padding: 10px;
+    font-size: 14px;
   }
 
   .assistant-image img {
-    max-width: 240px;
+    width: 80%;
   }
-
-  .assistant-content h2 {
-    font-size: 20px;
-    line-height: 1.3;
+}
+@media (max-width: 480px) {
+  .assistant-content h2,
+  .assistant-content .highlight,
+  .assistant-content .highlight b,
+  strong {
+    font-size: 24px;
   }
 
   .assistant-content p {
     font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .assistant-search {
+    flex-direction: column;
+    max-width: 100%;
+    margin-bottom: 30px;
   }
 
   .assistant-search input {
-    font-size: 14px;
-    padding: 12px;
+    font-size: 13px;
+    padding: 10px 25px 10px 35px; /* padding adjusted for icon space */
+  }
+
+  .Searchicon img {
+    width: 20px;
+    height: 20px;
+    margin-left: -310px;
+    margin-bottom: -30px;
+    margin-top: 10px;
   }
 
   .search-btn {
-    font-size: 18px;
-    padding: 10px;
+    font-size: 14px;
+    padding: 8px 0;
   }
 
   .outlined-btn {
     font-size: 13px;
-    padding: 10px 12px;
+    padding: 8px;
+  }
+
+  .assistant-image img {
+    width: 100%;
   }
 }

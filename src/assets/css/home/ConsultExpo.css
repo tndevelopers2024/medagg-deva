@@ -42,6 +42,11 @@ body {
   color: #999;
   margin-bottom: 30px;
 }
+.border-right{
+  border-right: 2px dashed #999;
+  padding-right: 20px;
+  /* outline-offset: 10px; */
+}
 
 .step {
   display: flex;
@@ -51,8 +56,8 @@ body {
 }
 
 .icon img{
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   margin-right: 15px; 
 }
@@ -116,6 +121,12 @@ form button {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.arrowimg .arrow{
+ margin-top: -25px;
+ margin-bottom: 10px;
+ margin-left: 15px;
+ 
+}
 
 @media (max-width: 1024px) {
   .consult-container {
@@ -123,6 +134,11 @@ form button {
     align-items: center;
     gap: 40px;
   }
+  .border-right{
+ /* display: none; */
+ border: none;
+ padding-right: 0;
+}
 
   .left-panel, .right-panel {
     width: 100%;
@@ -150,6 +166,10 @@ form button {
   .consult-section {
     padding: 40px 15px;
   }
+.arrowimg .arrow{
+display: none;
+ 
+}
 
   .left-panel h2 {
     font-size: 24px;

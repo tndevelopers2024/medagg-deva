@@ -20,14 +20,15 @@ const WhyMedagg = () => {
 
     <div className="features-grid">
       <div className="feature-card">
-        <img src={Wimg1} alt="Surgeries" />
+         <div className="doted-border"><img src={Wimg1} alt="Surgeries" /></div>
+        
         <h3>SURGERIES SIMPLIFIED</h3>
         <p>
           Medagg healthcare helps you choose different options for surgery. We help you choose the best hospital. We also provide alternative treatment for surgeries
         </p>
       </div>
       <div className="feature-card ">
-        <img src={Wimg2}  alt="Care Custodian" />
+        <div className="doted-border"><img src={Wimg2}  alt="Care Custodian" /></div>
         <h3>CARE CUSTODIAN</h3>
         <p>
           Medagg Healthcare’s Care Custodian will be your one point contact, who will guide and help you choose the right treatment, with the right hospital!
@@ -35,7 +36,8 @@ const WhyMedagg = () => {
       </div>
 
       <div className="feature-card">
-        <img src={Wimg3}  alt="Insurance" />
+         <div className="doted-border"><img src={Wimg3}  alt="Insurance" /></div>
+        
         <h3>ALL INSURANCE ACCEPTED</h3>
         <p>
           Medagg healthcare helps you in getting the right hospital for your insurance policy. All insurances are accepted
@@ -43,21 +45,23 @@ const WhyMedagg = () => {
       </div>
 
       <div className="feature-card">
-        <img src={Wimg4} alt="Second Opinion" />
+         <div className="doted-border"> <img src={Wimg4} alt="Second Opinion" /></div>
+       
         <h3>SECOND OPINION</h3>
         <p>
           Medagg healthcare helps you choose different options for surgery. We help you choose the best hospital. We also provide alternative treatment for surgeries
         </p>
       </div>
       <div className="feature-card">
-        <img src={Wimg5}  alt="Post Care" />
+         <div className="doted-border"><img src={Wimg5}  alt="Post Care" /></div>
+        
         <h3>POST SURGERY CARE</h3>
         <p>
           Medagg healthcare helps you choose different options for surgery. We help you choose the best hospital. We also provide alternative treatment for surgeries
         </p>
       </div>
       <div className="feature-card">
-        <img src={Wimg6}  alt="No-cost EMI" />
+         <div className="doted-border"><img src={Wimg6}  alt="No-cost EMI" /></div>
         <h3>NO-COST EMI</h3>
         <p>
           Medagg healthcare helps you choose different options for surgery. We help you choose the best hospital. We also provide alternative treatment for surgeries

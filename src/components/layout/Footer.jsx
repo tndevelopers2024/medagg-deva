@@ -1,3 +1,8 @@
+import React from 'react';
+import { SlSocialFacebook } from "react-icons/sl";
+import { PiInstagramLogoThin,PiYoutubeLogoThin  } from "react-icons/pi";
+import { LuLinkedin } from "react-icons/lu";
+import { RiTwitterXFill } from "react-icons/ri";
 import '../../assets/css/home/Footer.css';
 import Hlogo from '../../../public/logo/Hlogo.png';
 
@@ -15,7 +20,6 @@ const Footer = () => {
         </p>
         <button className="know-more">Know More</button>
         <div className="policy-links">
-          <a href="#">Privacy Policy</a> | <a href="#">Terms and Condition</a>
         </div>
       </div>
 
@@ -61,7 +65,18 @@ const Footer = () => {
         <a href="#"><i className="fab fa-linkedin-in"></i></a>
         <a href="#"><i className="fab fa-x-twitter"></i></a>
       </div>
-      <p>© 2025 Medagghealthcare. All rights reserved.</p>
+
+      <div className="ftap">
+              <p><a href="#">Privacy Policy</a> | <a href="#">Terms and Condition</a></p>
+              <div className="footericon">
+                 <i className="ficon-circle"><SlSocialFacebook /></i>
+                 <i className="ficon-circle"><PiInstagramLogoThin /></i>
+                 <i className="ficon-circle"><PiYoutubeLogoThin /></i>
+                 <i className="ficon-circle"><LuLinkedin /></i>
+                 <i className="ficon-circle"><RiTwitterXFill /></i>
+              </div>
+              <p> © 2025 Medagghealthcare. All rights reserve</p>
+      </div>
     </div>
   </footer>
   );

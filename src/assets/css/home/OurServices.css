@@ -5,11 +5,18 @@ body {
 }
 
 .services-section {
-  background: linear-gradient(to bottom, rgba(25, 9, 61, 0.95), rgba(25, 9, 61, 0.95)),
-              url('bg.jpg') no-repeat center center / cover;
+  /* background: linear-gradient(to bottom, rgba(25, 9, 61, 0.95), rgba(25, 9, 61, 0.95)),
+              url('bg.jpg') no-repeat center center / cover; */
+  background-image: linear-gradient(to bottom, rgba(50, 37, 84, 0.79)), url(../../image/OurSerimg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 60px 20px;
   text-align: center;
   color: #fff;
+}
+.services-header{
+  margin-left: -60px;
 }
 
 .services-header h2  {
@@ -18,6 +25,7 @@ body {
   margin-bottom: 10px;
   text-align:left ;
   margin-left: 180px;
+  font-weight: 700;
 }
 
 .highlight {
@@ -30,22 +38,24 @@ body {
 
 .services-header p {
   color: #cfcfcf;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 40px;
   margin: 0;
   text-align:left;
   margin-left: 180px;
+  font-weight: 400;
 }
 
 .services-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
   
 }
 
 .service-card {
+  border: 2px solid transparent;
   background-color: #fff;
   color: #1c164d;
   border-radius: 16px;
@@ -99,6 +109,29 @@ body {
     margin: 0 auto;
   }
 }
+@media (max-width: 1199px) {
+  .services-header {
+    margin-left: 0;
+  }
+
+  .services-header h2,
+  .services-header p {
+    margin-left: 40px;
+    text-align: left;
+  }
+
+  .services-cards {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .service-card {
+    padding: 25px 30px;
+    max-width: 100%;
+    flex: 1 1 45%; /* Two columns */
+  }
+}
+
 
 @media (max-width: 768px) {
   .services-header h2 {

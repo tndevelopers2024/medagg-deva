@@ -7,7 +7,7 @@ import AppBook from '../../assets/image/AppBook.png';
                 <section className="appointment-section">
   <div className="appointment-container">
     <div className="appointment-left">
-      <p className="subtitle">Are you looking to get a Consultation for your healthcare needs?</p>
+      <p className="subtitle1">Are you looking to get a Consultation for your healthcare needs?</p>
       <h1 className="main-heading">Book Your Appointment with <br/>Experts Near You</h1>
       <form className="appointment-form">
         <input type="tel" placeholder="Enter Your Phone Number" required />

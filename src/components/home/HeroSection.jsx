@@ -3,6 +3,7 @@ import { SlSocialFacebook } from "react-icons/sl";
 import { PiInstagramLogoThin,PiYoutubeLogoThin  } from "react-icons/pi";
 import { LuLinkedin } from "react-icons/lu";
 import { RiTwitterXFill } from "react-icons/ri";
+import  Searchbar from '../../assets/icons/search.png'; 
 
 
 
@@ -22,7 +23,7 @@ const Hero = () => {
           <div className="logo-box">
             <img src="/logo/Logo.png" alt="ISVIR Logo" />
             <div className="logo-text">
-              <h2><span>ISVIR <h2>Indian Society of Vascular and<br />Interventional Radiology </h2></span></h2>
+              <h2><span>ISVIR <br /><h2>Indian Society of Vascular and<br />Interventional Radiology </h2></span></h2>
             </div>
           </div>
 
@@ -34,7 +35,8 @@ const Hero = () => {
           </p>
 
           <div className="search-container">
-            <input type="text" placeholder="Facing symptoms? Type them in" />
+            <div className="Search-bar"><img src={Searchbar} alt="" /></div>
+            <input type="text"  placeholder= {'Facing symptoms? Type them in'} />
             <button>Search</button>
           </div>
 
